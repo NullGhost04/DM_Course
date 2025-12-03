@@ -31,9 +31,5 @@ try({ quartz() }, silent = TRUE)
 plot(rules)
 
 top_rules_20 <- rules_sorted[1:20]
-
-# Graph view (HTML widget)
 plot(top_rules_20, method = "graph", engine = "htmlwidget")
-
-### --- 8. Grouped Matrix Plot ---
 plot(top_rules_20, method = "grouped")
